@@ -6,9 +6,12 @@ import LargeCard from '../components/LargeCard'
 import MediumCard from '../components/MediumCard'
 import SmallCard from '../components/SmallCard'
 
+
 export default function Home( { exploreData, cardsData } ) {
+
+
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Airbnb Clone</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,9 +19,8 @@ export default function Home( { exploreData, cardsData } ) {
       
       <Header/>
       <Banner/>
-      {/* Main */}
 
-      <main className="max-w-7xl mx-auto px-8 sm:px-16">
+      <main className="max-w-7xl mx-auto px-8 sm:px-16 shadow-md">
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5"> Explore Nearby</h2>
 
@@ -38,7 +40,7 @@ export default function Home( { exploreData, cardsData } ) {
         <section>
           <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
 
-          <div className="flex space-x-3 overflow-scroll scrolllbar-hide py-3">
+          <div className="flex space-x-3 overflow-scroll py-3 scrollbar-hide">
             {cardsData?.map(({img, title}) => (
               <MediumCard
               key={img}
