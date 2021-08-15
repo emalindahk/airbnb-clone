@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { format } from 'date-fns'
 import InfoCard from '../components/InfoCard'
+import Map from '../components/Map'
 
 function search( {searchResults}) {
 
@@ -46,6 +47,10 @@ function search( {searchResults}) {
                           total={total}/>
                       ))}
                   </div>
+              </section>
+
+              <section className="hidden xl:inline-flex lg:min-w-[600px]">
+                  <Map searchResults={searchResults}/>
               </section>
             </main>
 

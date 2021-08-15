@@ -6,4 +6,9 @@
         rounded-full cursor-pointer active:scale-95 active:bg-gray-100
         transition transform duration-100 ease-out
     }
+
+    .mapboxgl-popup-content {
+        @apply bg-transparent bg-opacity-80 !important
+    }
+   
 }
